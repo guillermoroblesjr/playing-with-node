@@ -1,5 +1,5 @@
 // var fs = require('fs');
-var jf = require('jsonfile')
+var jf = require('jsonfile');
 // var file = 'data.json'
 // var jsonObj = JSON.parse(fs.readFileSync(file, 'utf8'))
 var outputJsonObj = [];
@@ -16,7 +16,7 @@ var company = {
     "markets": [
       "biomedical"
     ]
-  }
+  };
 
 company.markets.push("genetics");
 
@@ -25,4 +25,4 @@ outputJsonObj = company;
 var outputFile = './tmp/001.json';
 jf.writeFile(outputFile, outputJsonObj, function(err){
   console.log(err)
-})
+});
